@@ -1,0 +1,62 @@
+/* styles.css */
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:'Poppins',sans-serif}
+body{
+  background:linear-gradient(135deg,#006837,#c6ff00);
+  color:#fff;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:stretch;
+}
+header{
+  padding:18px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(0,0,0,0.15);
+  backdrop-filter:blur(6px);
+}
+.brand{font-weight:700;font-size:20px;letter-spacing:1px}
+.top-menu{display:flex;gap:10px;flex-wrap:wrap}
+.menu-btn{
+  background:rgba(255,255,255,0.15);
+  color:#fff;
+  border:1px solid rgba(255,255,255,0.3);
+  padding:8px 10px;border-radius:6px;cursor:pointer;
+  transition:all .2s;
+}
+.menu-btn:hover{background:rgba(255,255,255,0.3);color:#004d00}
+main{flex:1;display:flex;align-items:center;justify-content:center;position:relative;padding:20px;z-index:1}
+.panel{
+  background:rgba(255,255,255,0.1);
+  border-radius:12px;
+  padding:20px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.3);
+  max-width:960px;width:100%;
+}
+.hidden{display:none}
+.welcome{text-align:center;background:rgba(255,255,255,0.12);padding:30px;border-radius:12px}
+.juz-list{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:10px}
+.juz-item{
+  background:rgba(255,255,255,0.2);
+  color:#004d00;
+  border:none;
+  padding:10px 12px;
+  border-radius:8px;
+  cursor:pointer;
+  transition:.2s;
+}
+.juz-item:hover{background:#fff;color:#006837}
+.niat-content{background:rgba(255,255,255,0.2);padding:14px;border-radius:8px;line-height:1.6}
+.clock-panel{display:flex;align-items:center;justify-content:center;height:260px}
+.clock-display{background:rgba(0,0,0,0.3);padding:20px;border-radius:12px;border:1px solid rgba(255,255,255,0.4)}
+.orbitron{font-family:'Orbitron',sans-serif;font-size:54px;color:#00ff6a;text-shadow:0 0 8px #00ff6a,0 0 20px rgba(0,255,106,0.2);letter-spacing:3px}
+footer{text-align:center;padding:12px;font-size:14px;color:#003300;background:rgba(255,255,255,0.3)}
+.modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.6);z-index:1000}
+.modal-inner{background:linear-gradient(135deg,#004d00,#99cc00);color:#fff;padding:18px;border-radius:10px;max-width:760px;width:90%;position:relative}
+.close-btn{position:absolute;right:10px;top:6px;background:transparent;border:0;color:#fff;font-size:22px;cursor:pointer}
+@media (max-width:700px){
+  .orbitron{font-size:36px}
+  .menu-btn{padding:6px 8px;font-size:13px}
+}
